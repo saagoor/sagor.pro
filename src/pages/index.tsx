@@ -6,6 +6,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
+import Technologies from '@/components/Technologies'
 
 const MAX_DISPLAY = 5
 
@@ -21,8 +22,14 @@ export default function Home({ posts }: any) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       {/* Introduction */}
       <section>
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">Software Engineer</h2>
+        <div className="pt-6 pb-8 space-y-4 md:space-y-6">
+          <div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-6xl">Software Engineer</h2>
+            <p className="text-lg leading-loose text-gray-500 dark:text-gray-400">Frontend • Backend • DevOps</p>
+          </div>
+          <div className='flex items-center space-x-4'>
+            <Technologies />
+          </div>
           <div className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             <p>
               As a self-taught software engineer with a strong foundation in programming languages and frameworks, including JavaScript, TypeScript, React, Next.js, Vue, PHP and Laravel,
