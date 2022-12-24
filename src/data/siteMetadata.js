@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://sagor.pro',
   siteRepo: 'https://github.com/saagoor/sagor.pro',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'hello@sagor.pro',
   github: 'https://github.com/saagoor',
