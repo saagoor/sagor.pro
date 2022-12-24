@@ -25,6 +25,12 @@ export default function Blog({ posts, initialDisplayPosts, pagination }: any) {
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
         title="All Posts"
+        description="Welcome to the blog of Mehedi H. Sagor,
+        a software engineer with a passion for solving complex technical challenges and staying up-to-date with the latest technologies and best practices.
+        In here, you'll find a mix of technical tutorials, insights, and musings on the world of software development,
+        as well as updates on my current projects and experiences.
+        Whether you're a fellow engineer looking to expand your skills or simply interested in the inner workings of software development,
+        I hope you'll find something of value here. Thank you for visiting, and I hope you'll join me on this journey of exploration and growth."
       />
     </>
   )

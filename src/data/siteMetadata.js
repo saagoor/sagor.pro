@@ -1,10 +1,10 @@
 const siteMetadata = {
   title: 'MH Sagor - Software Engineer',
-  author: 'Tails Azimuth',
+  author: 'MH Sagor',
   headerTitle: 'MH Sagor',
   description: 'Get to know Mehedi H. Sagor, a highly skilled software engineer with expertise in languages such as JavaScript, TypeScript, PHP, Rust. Browse through a selection of his notable projects and read about his technical experience and interests. Contact Mehedi H. Sagor for inquiries about potential collaboration or employment opportunities.',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://sagor.pro',
   siteRepo: 'https://github.com/saagoor/sagor.pro',
   siteLogo: '/static/images/logo.png',
@@ -30,7 +30,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: 'mailchimp',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the

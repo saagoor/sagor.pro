@@ -20,6 +20,7 @@ export default async (req, res) => {
     })
 
     if (response.status >= 400) {
+      console.log(await response.json(), API_KEY, buttondownRoute);
       return res.status(500).json({ error: `There was an error subscribing to the list.` })
     }
 

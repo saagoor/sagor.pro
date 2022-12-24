@@ -19,13 +19,44 @@ export default function Home({ posts }: any) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      {/* Introduction */}
+      <section>
+        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+          <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">Software Engineer</h2>
+          <div className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            <p>
+              As a self-taught software engineer with a strong foundation in programming languages and frameworks, including JavaScript, TypeScript, React, Next.js, Vue, PHP and Laravel,
+              I have consistently demonstrated a passion for learning and problem-solving.
+              In addition to developing scalable software, I am also skilled in DevOps and is able to deploy projects using CI/CD.
+            </p>
+            <br />
+            <p>
+              I have strong understanding of Linux, Docker, and currently learning Kubernetes,
+              which allows me to effectively manage the entire software development lifecycle.
+              In addition to these technical skills, I am also highly interested in artificial intelligence and is currently learning Rust programming language.
+            </p>
+            <br />
+            <p>
+              I like to picture myself as a broad thinker, optimistic, and ethical, always striving to do the right thing in every situation.
+              With a strong sense of curiosity and a commitment to continuous learning,
+              I believe I am well-suited to tackling complex technical challenges and adapting to new technologies.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Blog Section */}
+      <section className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+          <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Recent Articles
-          </h1>
+          </h2>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+            Welcome to the blog of Mehedi H. Sagor,
+            a software engineer with a passion for solving complex technical challenges and staying up-to-date with the latest technologies and best practices.
+            In here, you'll find a mix of technical tutorials, insights, and musings on the world of software development,
+            as well as updates on my current projects and experiences.
+            Whether you're a fellow engineer looking to expand your skills or simply interested in the inner workings of software development,
+            I hope you'll find something of value here. Thank you for visiting, and I hope you'll join me on this journey of exploration and growth.
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -59,7 +90,7 @@ export default function Home({ posts }: any) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
@@ -79,7 +110,7 @@ export default function Home({ posts }: any) {
             )
           })}
         </ul>
-      </div>
+      </section>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link

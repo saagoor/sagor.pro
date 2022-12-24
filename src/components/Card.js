@@ -2,11 +2,9 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+  <div className="p-4 md md:w-1/2" style={{ maxWidth: '800px' }}>
     <div
-      className={`${
-        imgSrc && 'h-full'
-      }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
+      className={`${imgSrc && 'h-full'} overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
     >
       {imgSrc &&
         (href ? (
@@ -14,18 +12,18 @@ const Card = ({ title, description, imgSrc, href }) => (
             <Image
               alt={title}
               src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
-              width={544}
-              height={306}
+              className="object-cover object-center"
+              width={800}
+              height={600}
             />
           </Link>
         ) : (
           <Image
             alt={title}
             src={imgSrc}
-            className="object-cover object-center md:h-36 lg:h-48"
-            width={544}
-            height={306}
+            className="object-cover object-center"
+            width={800}
+            height={600}
           />
         ))}
       <div className="p-6">
@@ -38,7 +36,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="mb-3 prose text-gray-500 max-w-none dark:text-gray-400">{description}</p>
         {href && (
           <Link
             href={href}
